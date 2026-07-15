@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Priyata 🌹</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/billy-argel-font" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Music Player -->
+<audio id="birthdayMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Ambient floating petals (background, all sections) -->
+<div class="ambient" id="ambient"></div>
+
+<!-- Envelope intro -->
+<div id="envelope-screen">
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope">
+      <div class="env-letter"><b>A Little Something<br>For You...</b></div>
+      <div class="env-body"></div>
+      <div class="env-flap"></div>
+      <div class="env-seal">P</div>
+    </div>
+    <p class="hint">tap the envelope to open</p>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="eyebrow"><b>A Birthday Celebration of 🎉</b></div>
+    <h1 class="name-script">Priyata 👸</h1>
+    <p class="hero-sub">
+      <!-- EDIT ME: short hero line -->
+     <b>Every year on this day, the world got a little brighter.✨</b> 
+    </p>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Days</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Hours</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Mins</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Secs</span></div>
+    </div>
+
+    <div class="scroll-cue"><b>scroll down ↓</b></div>
+  </section>
+
+  <div class="divider"><div class="line"></div><div class="mark">❦</div><div class="line"></div></div>
+
+  <!-- GALLERY -->
+  <section id="gallery-section">
+    <div class="eyebrow"><h3><b>Forever my favorite 😘</b></h3></div>
+    <h2 class="section-title"><b>Moments With You 👩‍❤️‍👨</b></h2>
+
+    <div class="scene">
+      <!--
+        HOW TO ADD YOUR PHOTOS:
+        1. Add class="has-img" to the .polaroid div
+        2. Set the <img src="..."> to your photo path/URL
+        3. Edit the caption text inside .cap
+        (drag left/right to spin the carousel, hover to pause it)
+      -->
+      <div class="gallery-3d" id="gallery">
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 1</span>
+            <img src="image2.jpeg" alt="Priyata photo 1">
+          </div>
+          <span class="cap"><b>Butterfly 🦋</b>  </span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 2</span>
+            <img src="image3.jpeg" alt="Priyata photo 2">
+          </div>
+          <span class="cap"><b>Peacock 🦚</b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 3</span>
+            <img src="image4.jpeg" alt="Priyata photo 3">
+          </div>
+          <span class="cap"><b>My Moon 🌙 </b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 4</span>
+            <img src="image5.jpeg" alt="Priyata photo 4">
+          </div>
+          <span class="cap"><b>Angle 💃</b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 5</span>
+            <img src="image6.jpeg" alt="Priyata photo 5">
+          </div>
+          <span class="cap"><b>Star ✨</b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 6</span>
+            <img src="image7.jpeg" alt="Priyata photo 6">
+          </div>
+          <span class="cap"><b>Spark 🌟</b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 7</span>
+            <img src="image8.png" alt="Priyata photo 7">
+          </div>
+          <span class="cap"><b>Sitara💫</b></span>
+        </div>
+                <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 7</span>
+            <img src="image9.png" alt="Priyata photo 7">
+          </div>
+          <span class="cap"><b>Flora🌼</b></span>
+        </div>
+                <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 7</span>
+            <img src="image10.jpg" alt="Priyata photo 7">
+          </div>
+          <span class="cap"><b>Lotus 🪷</b></span>
+        </div>
+        <div class="polaroid has-img">
+          <div class="frame">
+            <span class="placeholder-text">Photo 8</span>
+            <img src="image11.jpeg" alt="Priyata photo 8">
+          </div>
+          <span class="cap"><b>Fool 🌸</b></span>
+        </div>
+      </div>
+    </div>
+    <p class="gallery-hint">drag to spin · hover to pause</p>
+  </section>
+
+  <div class="divider"><div class="line"></div><div class="mark">❦</div><div class="line"></div></div>
+
+  <!-- LOVE LETTER -->
+  <section id="letter">
+    <div class="eyebrow"><h4> In  my own words</h4></div>
+    <h2 class="section-title">A Love Of Token To U 💗</h2>
+
+    <div class="letter-paper">
+      <div class="salut"><b>To My Someone Special ❤️,<br>Happy Birthday!🎉</b></div>
+      <!-- EDIT ME: replace this placeholder letter with your real message -->
+      <div class="letter-body">
+        <p><b><i>I'm the Luckiest one to have you in my life</i> — Today feels extra beautiful because it's the day you came into this world. You are my favorite person, my happiest place, and the reason behind so many of my smiles.</b></p>
+        <p><b>I'll always smile when I think about how our story began and all the little moments and inside jokes that are only ours. Those memories mean everything to me.</b></p>
+        <p><b>This year, I wish you endless happiness, good health, success, and a heart full of peace. May all your dreams come true, and may your smile never fade.</b></p><br>
+        <p><b>Happy Birthday, Dear. You deserve the world. 💖</b></p>
+      </div>
+      <div class="sign"><b>With All My Love ❤️<br>— Forever Yours.</b></div>
+    
+    </div>
+    <div class="letter-note">psst — edit the letter text directly in the HTML file</div>
+  </section>
+  <div class="divider"><div class="line"></div><div class="mark">❦</div><div class="line"></div></div>
+
+
+  <!-- WISH / INTERACTIVE -->
+  <section id="wish">
+    <div class="eyebrow"><b>One more thing</b></div>
+    <h2 class="section-title"><b>Wishing You A Great Happy Birthday! 🎉🎊🎂🎆</b></h2>
+
+    <div class="divider"><div class="line"></div><div class="mark">❦</div><div class="line"></div></div>
+
+
+    <button class="wish-btn" id="wishBtn"><b>Click for a Birthday Surprise</b></button>
+
+    <!-- Add this near the wish button -->
+<div class="music-control">
+  <button id="musicToggle" class="music-btn">♪ Pause Music</button>
+</div>
+
+    <!-- Birthday cake — hidden until the button is clicked -->
+    <div class="cake-stage" id="cakeStage">
+
+      <div class="sparkle"></div>
+     <div class="sparkle"></div>
+     <div class="sparkle"></div>
+      <!-- ===================== PREMIUM BIRTHDAY CAKE ===================== -->
+<svg width="320" height="400" viewBox="0 0 320 400">
+
+    <!-- ================= DEFINITIONS ================= -->
+    <defs>
+
+        <!-- Flame Glow -->
+        <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Outer Flame -->
+        <linearGradient id="outerFlame" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#ff5a00"/>
+            <stop offset="35%" stop-color="#ff9800"/>
+            <stop offset="75%" stop-color="#ffd54f"/>
+            <stop offset="100%" stop-color="#fffde7"/>
+        </linearGradient>
+
+        <!-- Inner Flame -->
+        <linearGradient id="innerFlame" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#fff59d"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+
+        <!-- Cake Shadow -->
+        <filter id="cakeShadow">
+            <feDropShadow dx="0" dy="5" stdDeviation="5"
+                flood-color="#d36b8f" flood-opacity=".25"/>
+        </filter>
+
+    </defs>
+
+    <!-- ================= Plate ================= -->
+    <ellipse cx="160" cy="350" rx="115" ry="18" fill="#efd6df"/>
+    <ellipse cx="160" cy="345" rx="105" ry="12" fill="#ffffff"/>
+
+    <!-- ================= Bottom Tier ================= -->
+    <g filter="url(#cakeShadow)">
+
+        <rect x="60" y="230" width="200" height="90"
+              rx="12" fill="#f28aac"/>
+
+        <rect x="60" y="230" width="200" height="18"
+              fill="#ffd9e6"/>
+
+        <!-- Cream -->
+        <path
+        d="
+        M60 245
+        q10 -10 20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="5"/>
+
+        <!-- Pearls -->
+        <g fill="#fff">
+            <circle cx="82" cy="275" r="5"/>
+            <circle cx="118" cy="275" r="5"/>
+            <circle cx="154" cy="275" r="5"/>
+            <circle cx="190" cy="275" r="5"/>
+            <circle cx="226" cy="275" r="5"/>
+        </g>
+
+    </g>
+
+    <!-- ================= Middle Tier ================= -->
+
+    <g filter="url(#cakeShadow)">
+
+        <rect x="85" y="165" width="150" height="70"
+              rx="10" fill="#f7a9c4"/>
+
+        <rect x="85" y="165" width="150" height="16"
+              fill="#ffe0eb"/>
+
+        <path
+        d="
+        M85 178
+        q10 -10 20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0
+        t20 0"
+        fill="none"
+        stroke="#fff"
+        stroke-width="4"/>
+
+        <g fill="#fff">
+            <circle cx="110" cy="198" r="4.5"/>
+            <circle cx="140" cy="198" r="4.5"/>
+            <circle cx="170" cy="198" r="4.5"/>
+            <circle cx="200" cy="198" r="4.5"/>
+        </g>
+
+    </g>
+
+    <!-- ================= Top Tier ================= -->
+
+    <g filter="url(#cakeShadow)">
+
+        <rect x="110" y="110"
+              width="100"
+              height="55"
+              rx="8"
+              fill="#fbc0d3"/>
+
+        <rect x="110" y="110"
+              width="100"
+              height="12"
+              fill="#ffeaf2"/>
+
+        <path
+        d="
+        M110 120
+        q8 -8 16 0
+        t16 0
+        t16 0
+        t16 0
+        t16 0
+        t16 0"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="3.5"/>
+
+        <text
+            x="160"
+            y="145"
+            text-anchor="middle"
+            font-size="18"
+            fill="#ff4f7d">❤</text>
+
+    </g>
+
+    <!-- ================= LEFT CANDLE ================= -->
+
+    <rect x="132" y="67" width="6" height="43"
+          rx="2" fill="#65c9ff"/>
+
+    <!-- Wick -->
+    <line x1="135" y1="67" x2="135" y2="62"
+          stroke="#444"
+          stroke-width="1.3"/>
+
+    <!-- Glow -->
+    <circle cx="135" cy="50"
+            r="14"
+            fill="#ffcf66"
+            opacity=".20">
+        <animate attributeName="r"
+                 values="12;16;12"
+                 dur=".35s"
+                 repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Outer Flame -->
+    <path
+    d="M135 60
+       C127 49 129 39 135 28
+       C141 39 143 49 135 60Z"
+    fill="url(#outerFlame)"
+    filter="url(#flameGlow)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-3 135 60;3 135 60;-3 135 60"
+            dur=".22s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <!-- Inner Flame -->
+    <path
+    d="M135 56
+       C132 49 133 44 135 39
+       C137 44 138 49 135 56Z"
+    fill="url(#innerFlame)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-2 135 56;2 135 56;-2 135 56"
+            dur=".18s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <!-- ================= CENTER CANDLE ================= -->
+
+    <rect x="157" y="52" width="6" height="58"
+          rx="2" fill="#76dd5f"/>
+
+    <line x1="160" y1="52" x2="160" y2="47"
+          stroke="#444"
+          stroke-width="1.3"/>
+
+    <circle cx="160" cy="35"
+            r="18"
+            fill="#ffcc55"
+            opacity=".25">
+        <animate attributeName="r"
+                 values="15;19;15"
+                 dur=".30s"
+                 repeatCount="indefinite"/>
+    </circle>
+
+    <path
+    d="M160 46
+       C151 33 154 19 160 6
+       C166 19 169 33 160 46Z"
+    fill="url(#outerFlame)"
+    filter="url(#flameGlow)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-4 160 46;4 160 46;-4 160 46"
+            dur=".20s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <path
+    d="M160 40
+       C156 32 157 26 160 20
+       C163 26 164 32 160 40Z"
+    fill="url(#innerFlame)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-3 160 40;3 160 40;-3 160 40"
+            dur=".18s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <!-- ================= RIGHT CANDLE ================= -->
+
+    <rect x="182" y="67" width="6" height="43"
+          rx="2" fill="#ffb347"/>
+
+    <line x1="185" y1="67" x2="185" y2="62"
+          stroke="#444"
+          stroke-width="1.3"/>
+
+    <circle cx="185" cy="50"
+            r="14"
+            fill="#ffcf66"
+            opacity=".20">
+        <animate attributeName="r"
+                 values="12;16;12"
+                 dur=".35s"
+                 repeatCount="indefinite"/>
+    </circle>
+
+    <path
+    d="M185 60
+       C177 49 179 39 185 28
+       C191 39 193 49 185 60Z"
+    fill="url(#outerFlame)"
+    filter="url(#flameGlow)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-3 185 60;3 185 60;-3 185 60"
+            dur=".22s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <path
+    d="M185 56
+       C182 49 183 44 185 39
+       C187 44 188 49 185 56Z"
+    fill="url(#innerFlame)">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="-2 185 56;2 185 56;-2 185 56"
+            dur=".18s"
+            repeatCount="indefinite"/>
+    </path>
+
+    <!-- Cherry -->
+    <circle cx="160" cy="100" r="6" fill="#d90429"/>
+    <path d="M160 95 Q166 84 172 80"
+          stroke="#2d6a4f"
+          stroke-width="2"
+          fill="none"/>
+
+</svg>
+      <div class="cake-caption"><b>Happy Birthday, Priyata 🎂</b></div>
+
+    </div>
+    <div class="wish-msg" id="wishMsg"><h1><b>Happy Birthday, Dear.Enjoy your special day! 🎉</b></h1></div>
+  </section>
+
+  <div class="divider"><div class="line"></div><div class="mark">❦</div><div class="line"></div></div>
+
+
+  <footer><b>made with love, for Priyata · August 21st</b></footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
