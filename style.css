@@ -411,3 +411,15 @@ filter:blur(3px);
   background: var(--gold);
   color: var(--wine-deep);
 }
+
+html, body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
