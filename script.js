@@ -78,6 +78,8 @@ document.body.style.overflow = 'hidden';
   gallery.addEventListener('mouseenter', () => (isHovering = true));
   gallery.addEventListener('mouseleave', () => (isHovering = false));
 
+  
+
   function render(now) {
     const dt = now - lastTime;
     lastTime = now;
